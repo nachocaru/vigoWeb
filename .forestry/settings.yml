@@ -10,25 +10,10 @@ sections:
   create: all
   match: "**/*"
 - type: directory
-  path: content/acerca
-  label: Acerca
-  create: all
-  match: "**/*"
-- type: directory
   path: content/catalogo
   label: Catalogo
   create: all
   match: "**/*"
-- type: directory
-  path: content/contacto
-  label: Contacto
-  create: all
-  match: "**/*"
-- type: directory
-  path: content
-  label: Pages
-  create: all
-  match: "*"
 upload_dir: themes/vigo/static/img
 public_path: "/uploads"
 front_matter_path: ''
