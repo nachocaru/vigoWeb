@@ -5,7 +5,7 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
-  path: themes/vigo
+  path: themes/vigo/layouts
   label: Main Site
   create: all
   match: "**/*"
