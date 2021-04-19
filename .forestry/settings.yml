@@ -4,9 +4,11 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: themes/vigo/layouts/**/*
-  label: Main Index
+- type: directory
+  path: themes/vigo/layouts
+  label: Main Site
+  create: all
+  match: "**/*"
 - type: directory
   path: content/acerca
   label: Acerca
