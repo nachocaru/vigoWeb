@@ -5,9 +5,8 @@ admin_path:
 webhook_url: 
 sections:
 - type: document
-  path: themes/vigo/layout/*
+  path: themes/vigo/layout/**/*
   label: Main Index
-  match: "**/*"
 - type: directory
   path: content/acerca
   label: Acerca
