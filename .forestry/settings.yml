@@ -5,6 +5,11 @@ admin_path:
 webhook_url: 
 sections:
 - type: directory
+  path: themes/vigo/static/img
+  label: Media
+  create: all
+  match: "**/*"
+- type: directory
   path: themes/vigo/layouts
   label: Main Site
   create: all
