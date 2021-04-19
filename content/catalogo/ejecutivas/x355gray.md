@@ -1,13 +1,13 @@
 ---
-Layout: "sillas"
+Layout: sillas
 Categories:
- - "homeoffice"
- - "operativas"
- - "ejecutivas"
- - "gerenciales"
+- homeoffice
+- operativas
+- ejecutivas
+- gerenciales
 Title: x3-55 Gray
-Description: Silla Operativa resistente.
-Caracteristicas: 
+Description: Silla Operativa resistente
+Caracteristicas:
 - Silla Operativa
 - Respaldo en Mesh, con marco de nylon “GRIS”
 - Base metálica acabado pintura al horno “GRIS”
@@ -19,13 +19,10 @@ Caracteristicas:
 - Cojín lumbar ajustable en altura
 - Soporta hasta 150 kilos
 - Garantía 3 años
-
-
-
-Date: 2021-01-31T19:13:03-02:00
+Date: 2021-01-31T19:13:03.000-02:00
 pdf: pdf-archivos/x355gray.pdf
 img: img-catalogo/x355gray/1.jpg
-gallery: 
+gallery:
 - img-catalogo/x355gray/1.jpg
 - img-catalogo/x355gray/2.jpg
 - img-catalogo/x355gray/3.jpg
@@ -36,13 +33,10 @@ gallery:
 - img-catalogo/x355gray/8.jpg
 - img-catalogo/x355gray/9.jpg
 - img-catalogo/x355gray/10.jpg
-
-
-
 colors:
-    - Gris y rojo
-    - Rojo 
-    - Gris oscuro
-    - Gris azulado
+- Gris y rojo
+- Rojo
+- Gris oscuro
+- Gris azulado
 
 ---
