@@ -6,7 +6,7 @@ Categories:
 - ejecutivas
 - gerenciales
 Title: x3-55 Gray
-Description: Silla Operativa resistente
+Description: Silla Operativa resistente/
 Caracteristicas:
 - Silla Operativa
 - Respaldo en Mesh, con marco de nylon “GRIS”
