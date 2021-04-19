@@ -1,0 +1,27 @@
+.ftr-nav {
+  display: block;
+  margin: 0 0 4rem;
+  text-align: center;
+  padding: 0;
+}
+
+.ftr-nav__it {
+  display: block;
+  font-family: @vigo-font;
+  font-size: 1.5rem;
+  text-transform: uppercase;
+  position: relative;
+}
+
+.ftr-nav__it + .ftr-nav__it {
+    margin-top: 1.5rem;
+}
+
+.ftr-nav__it a {
+  color: @vigo-white;
+  .transition(color .2s ease-in);
+}
+
+.ftr-nav__it a:hover {
+  color: @vigo-pink;
+}

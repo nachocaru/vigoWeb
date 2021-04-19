@@ -1,0 +1,71 @@
+/* Buttons */
+
+.btn {
+  font-size: 1.875rem;
+  line-height: 2rem;
+  padding: .875rem 4rem;
+  border: 2px solid @vigo-red;
+  background: transparent;
+  text-transform: uppercase;
+  font-family: @vigo-font;
+  font-weight: normal;
+  text-decoration: none;
+  color: @vigo-red;
+  border-radius: .25rem;
+  -moz-transition: background-color .3s ease-in, color .3s ease-in, width 0.3s, border-width 0.3s, border-color 0.3s;
+  -webkit-transition: background-color .3s ease-in, color .3s ease-in, width 0.3s, border-width 0.3s, border-color 0.3s;
+  transition: background-color .3s ease-in, color .3s ease-in, width 0.3s, border-width 0.3s, border-color 0.3s;
+  cursor: pointer;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.btn:hover {
+  background-color: @vigo-red;
+  color: @vigo-white;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+/* boton de limpiar formulario */
+
+.btn-clean-form {
+  font-size: 1rem;
+  color: #aaa;
+  font-style: italic;
+  border: 0;
+  background: none;
+  line-height: 2rem;
+  margin: 0 auto;
+  display: inline-block;
+  cursor: pointer;
+}
+
+.btn-clean-form:hover {
+  text-decoration: underline;
+}
+
+.btn__hero {
+  color: @vigo-pink;
+  border-color: @vigo-pink;
+}
+
+.btn__hero:hover {
+  border-color: @vigo-white;
+}
+
+.btn--filter {
+  color: @vigo-pink;
+  border-color: @vigo-pink;
+  font-size: 1.5rem;
+  padding: 0 1rem;
+  line-height: 2.5rem;
+}
+
+.btn--filter:hover {
+  background: transparent;
+  color: @vigo-red;
+  border-color: @vigo-red;
+}

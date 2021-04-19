@@ -1,0 +1,9 @@
+{{ if eq .Site.Params.env  "dev" }}
+<!-- Dev environment styles -->
+<link rel='stylesheet' href='/css/styles.less' type='text/less' media='screen, projection, handheld' />
+<script src="/js/less.min.js"></script>
+{{ else }}
+<link rel='stylesheet' href='/css/screen.css' type='text/css' media='screen, projection, handheld' />
+{{ end }}
+<link href='/fonts/stylesheet.css' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">

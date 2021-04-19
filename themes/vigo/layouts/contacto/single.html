@@ -1,0 +1,66 @@
+{{ partial "head.html" . }}
+
+<div class="wrp">
+    <section class="main" role="main">
+
+        <div class="blk">
+            <h1 class="blk__tit">Contacto</h1>
+            <p class="blk__desc">Complete el siguiente formulario para contactarnos vía web:</p>
+            <div class="blk__cnt blk__cnt--cols">
+                <div class="main_col">
+                    <form class="form" action="" target="_blank">
+                        <fieldset>
+                            <div class="form__row">
+                                <label class="form__lbl">
+                                    <b class="form__lbl-name">Nombre:</b>
+                                    <input type="text" placeholder="ej: Juan Pérez"/>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__lbl">
+                                    <b class="form__lbl-name">Email:</b>
+                                    <input type="text" placeholder="ej: juan@email.com"/>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__lbl">
+                                    <b class="form__lbl-name">Asunto:</b>
+                                    <input type="text" name="asunto" placeholder="ej: Cotización"/>
+                                </label>
+                            </div>
+                            <div class="form__row">
+                                <label class="form__lbl">
+                                    <b class="form__lbl-name">Comentarios:</b>
+                                    <textarea name="mensaje" placeholder="Escriba su mensaje aquí"></textarea>
+                                </label>
+                            </div>
+                            <div class="form__actions">
+                                <button type="submit" class="btn btn--form-send">Enviar</button>
+                            </div>
+                        </fieldset>
+                    </form>
+                </div>
+                <div class="sec_col">
+                    <div class="contact-blk">
+                        <p class="contact-blk__desc">
+                            Por contacto acerca de cotizaciones puede también utilizar nuestro e-mail de contacto:
+                            <a href="mailto:info@worldvigo.com" target="_blank" title="Contactar a Vigo vía mail">info@worldvigo.com</a>
+                        </p>
+                        <ul class="contact-blk__list">
+                            <li class="contact-blk__list-it">
+                                <a href="https://www.facebook.com/worldvigo" target="_blank"><i class="fa fa-facebook"></i></a>
+                            </li>
+                            <li class="contact-blk__list-it">
+                                <a href="skype:fphard?chat" ><i class="fa fa-skype"></i></a>
+                            </li>
+                            <li class="contact-blk__list-it">
+                                <a href="mailto:info@worldvigo.com" ><i class="fa fa-envelope-o"></i></a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+{{ partial "footer.html" . }}

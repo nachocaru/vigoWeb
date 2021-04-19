@@ -1,0 +1,30 @@
+{{ partial "head.html" . }}
+
+<div class="wrp">
+    <section class="main" role="main">
+
+        <div class="blk">
+            <h1 class="blk__tit">{{ .Title }}</h1>
+            <div class="blk__cnt">
+                <div class="art-list">
+
+                    {{ range .Paginator.Pages }}
+                    <article class="art">
+                        <h1 class="art__tit">
+                            <a href="#">{{ .Title }}</a>
+                        </h1>
+                        <p class="art__desc">{{ .Description }}</p>
+                        <a href="{{ .RelPermalink }}" class="art__img">
+                            <img src="/img/articulos/{{ .Params.img }}" alt="{{ .Title }}">
+                        </a>
+                    </article>
+                    {{ end}}
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+{{ partial "footer.html" . }}

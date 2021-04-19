@@ -1,0 +1,12 @@
+baseurl: http://www.worldvigo.com/
+languageCode: en-us
+title: Vigo Equipamiento
+theme: vigo
+publishdir: "_site"
+params:
+  env: "dev"
+taxonomies:
+  category: "categories"
+paginate: 25
+paginatePath: "page"
+---

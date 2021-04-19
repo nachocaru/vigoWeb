@@ -1,0 +1,62 @@
+.contact-blk {
+  display: block;
+  text-align: center;
+  padding: 1.5rem;
+  background-color: @vigo-gray;
+  .border-radius(4px);
+}
+
+.contact-blk__list {
+  padding: 1rem 0;
+  margin: 0;
+  display: block;
+  text-align: center;
+}
+
+.contact-blk__list-it {
+  display: inline-block;
+  vertical-align: middle;
+  line-height: 3.5rem;
+}
+
+.contact-blk__list-it a {
+  background-color: #333333;
+  .border-radius(50%);
+  width: 3rem;
+  line-height: 2.8rem;
+  overflow: hidden;
+  display: block;
+  vertical-align: middle;
+  color: @vigo-white;
+  font-size: 1.75rem;
+  text-align: center;
+  border: 2px solid transparent;
+  .transition(all .2s ease-in);
+  &:hover {
+    border: 2px solid @vigo-red;
+    background-color: transparent;
+  }
+}
+
+.contact-blk__list-it:hover a i{
+  .animation(moveVertical 300ms ease-out);
+  color: @vigo-red;
+}
+
+.contact-blk__list-it--footer a:hover {
+  border-color: white;
+}
+
+.contact-blk__list-it--footer:hover a i{
+  color: white;
+}
+
+.contact-blk__list-it + .contact-blk__list-it {
+  margin-left: 1rem;
+  margin-top: 0;
+}
+
+.contact-blk--ftr .contact-blk__list-it a {
+  color: #717171;
+  background: #434343;
+}

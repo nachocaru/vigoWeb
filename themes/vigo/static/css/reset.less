@@ -1,0 +1,163 @@
+// RESET
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  min-height: 100%;
+  height: auto;
+  font-family: Helvetica, Arial, sans-serif;
+  color: #333333;
+}
+
+html {
+  -ms-text-size-adjust: 100%;
+  -webkit-text-size-adjust: 100%;
+  font-size: 14px;
+  line-height: 18px;
+}
+
+body {
+  font-size: 1rem;
+}
+
+body * {
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+  box-sizing: border-box;
+}
+
+*:focus{
+  outline: none;
+  box-shadow: 0 0 3px rgba(0,0,0,.15) inset;
+}
+
+body *:first-child {
+  margin-top: 0;
+}
+
+::-moz-selection {
+  background-color: rgba(205,0,0,.2);
+  color:  @vigo-red;
+}
+
+::selection {
+  background-color: rgba(205,0,0,.2);
+  color:  @vigo-red;
+}
+
+a {
+  text-decoration: none;
+  color: @vigo-red;
+}
+// form elements
+
+form,
+input,
+textarea,
+select,
+option,
+button {
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+// block elements
+
+article,
+aside,
+main,
+section,
+header,
+footer,
+nav {
+  display: block;
+}
+
+// lists
+
+ul, ol, dl {
+  margin: 1.5rem 0;
+  padding-left: 2rem;
+}
+
+li {
+  line-height: 1.5rem;
+  font-size: 1.125rem;
+}
+
+li + li{
+  margin-top: 1.5rem;
+}
+
+form {
+  margin: 0 auto;
+}
+
+fieldset {
+  display: table;
+  border: 0;
+  padding: 0;
+  margin: 0;
+}
+
+input[type=text],
+input[type=password],
+input[type=search],
+input[type=number],
+input[type=email],
+textarea {
+  border: 1px solid #777882;
+  border-radius: 4px;
+  padding: .5rem;
+  min-width: 50%;
+  font-size: 1rem;
+  line-height: 1.5rem;
+  font-family: @vigo-font;
+}
+
+input[type=text]:focus,
+input[type=password]:focus,
+input[type=search]:focus,
+input[type=number]:focus,
+input[type=email]:focus,
+textarea:focus {
+  border-color: @vigo-red;
+}
+
+input[type=text]:focus ~ b,
+input[type=password]:focus ~ b,
+input[type=search]:focus ~ b,
+input[type=number]:focus ~ b,
+input[type=email]:focus ~ b {
+  color: @vigo-red;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 200px;
+  max-height: 500px;
+}
+
+button,
+.btn {
+  font-family: @vigo-font;
+}
+
+::-webkit-input-placeholder {
+  color: @vigo-white;
+}
+
+:-moz-placeholder {
+  color: @vigo-white;
+}
+
+::-moz-placeholder {
+  color: @vigo-white;
+}
+
+:-ms-input-placeholder {
+  color: @vigo-white;
+}

@@ -1,0 +1,126 @@
+{{ partial "head.html" . }}
+
+<div class="wrp">
+    <section class="main" role="main">
+
+        <div class="prod">
+
+            <h1 class="prod__tit">{{ .Title }}</h1>
+
+            <div class="prod__cnt">
+
+                <div class="prod__img">
+                    <img src="/img/{{ .Params.img }}" alt="{{ .Params.img }}" />
+                </div>
+                <div class="prod__info">
+                    <div class="prod__info-blk">
+                        <strong>Descripción:</strong>
+                        <p class="prod__desc">{{ .Description }}</p>
+                    </div>
+                    <div class="prod__info-blk">
+                        <strong>Características:</strong>
+                        <ul>
+                            {{ range .Params.caracteristicas }}
+                                <li class="prod__desc"><p>{{ . }}</li>
+                            {{ end }}
+                        </ul>
+                    </div>
+                    <div class="prod__info-blk">
+                        <strong>Colores:</strong>
+                        <ul>
+                            {{ range .Params.colors }}
+                            <li class="prod__desc"><p>{{ . }}</p></li>
+                            {{ end }}
+                        </ul>
+
+                        <!--<ul class="prod__color-table">
+                            {{ range .Params.colors }}
+                            <li class="prod__color" style="background-color:{{ . }}"></li>
+                            {{ end }}
+                        </ul>-->
+                    </div>
+                    <div class="prod__info-blk">
+                        <strong>Brochure:</strong>
+                            <a href="/img/{{ .Params.pdf }}" class="prod__desc">Descarga</a>
+                    </div>
+                </div>
+
+            </div>
+
+            {{ if isset .Params "gallery" }}
+            <div class="prod__gallery" id="gallery">
+                <h2 class="prod__gallery-tit">Galería</h2>
+                {{ range .Params.gallery }}
+                <a href="/img/{{ . }}" target="_blank"><img src="/img/{{ . }}" /></a>
+                {{ end }}
+            </div>
+            {{ end }}
+
+            <div class="blk">
+                <h2 class="blk__tit">Consultar por este modelo</h2>
+                <form class="form" action="" target="_blank">
+                    <fieldset>
+                        <div class="form__row">
+                            <label class="form__lbl">
+                                <b class="form__lbl-name">Nombre:</b>
+                                <input type="text" placeholder="ej: Juan Pérez"/>
+                            </label>
+                            <label class="form__lbl">
+                                <b class="form__lbl-name">Email:</b>
+                                <input type="text" placeholder="ej: juan@email.com"/>
+                            </label>
+                        </div>
+                        <div class="form__row">
+                            <label class="form__lbl">
+                                <b class="form__lbl-name">Mensaje:</b>
+                                <textarea name="mensaje" placeholder="Escriba su mensaje aquí"></textarea>
+                            </label>
+                        </div>
+                        <div class="form__actions">
+                            <button type="submit" class="btn btn--form-send">Enviar</button>
+                        </div>
+                    </fieldset>
+                </form>
+            </div>
+
+        </div>
+
+    </section>
+</div>
+
+<div class="cell cell--dark">
+    <div class="wrp">
+        <section class="blk">
+            <h1 class="blk__tit">
+                Productos relacionados
+            </h1>
+            <div class="blk__cnt">
+                <div class="art-list">
+                    {{ $page_link := .RelPermalink }}
+                    {{ $categories := .Params.categories }}
+                    {{ range $page := .Site.Pages }}
+                    {{ $has_common_categories := intersect $categories .Params.categories | len | lt 0 }}
+                    {{ if and $has_common_categories (ne $page_link $page.RelPermalink) (lt ($.Scratch.Get "$c") 4)}}
+                    {{ $.Scratch.Add "$c" 1 }}
+
+                    <article class="art">
+                        <h1 class="art__tit">
+                            <a href="#">{{ $page.Title }}</a>
+                        </h1>
+                        <p class="art__desc">{{ $page.Description }}</p>
+                        <a href="{{ $page.RelPermalink }}" class="art__img">
+                            <img src="/img/{{ $page.Params.img }}" alt="{{ $page.Title }}">
+                        </a>
+                    </article>
+
+                    {{ end }}
+                    {{ end }}
+
+                </div>
+            </div>
+        </section>
+    </div>
+</div>
+
+
+{{ partial "footer.html" . }}

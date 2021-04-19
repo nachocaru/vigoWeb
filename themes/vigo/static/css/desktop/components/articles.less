@@ -1,0 +1,88 @@
+.art-list {
+  display: block;
+  width: 1020px;
+}
+
+.art {
+  float: left;
+  width: 228px;
+  padding: 260px 15px 15px 15px;
+  margin-right: 22px;
+  margin-bottom: 20px;
+  height: 375px;
+  display: block;
+  .transition(all .2s ease-in);
+}
+
+.art:hover {
+  .box-shadow(3px 3px 13px -1px rgba(0,0,0,0.4));
+  .transform(scale(1.05));
+}
+
+.art:hover .art__tit {
+  .animation(moveVertical 300ms ease-out);
+}
+
+.art:hover .art__desc {
+  .animation(moveVertical 500ms ease-out);
+}
+
+.art:hover .art__img img{
+  .transform(scale(1.2) rotate(-5deg));
+}
+
+.art:before {
+  content: "";
+  background-image: url("/img/item-logo-rojo.svg");
+  width: 100%;
+  position: absolute;
+  top: 185px;
+  z-index: 1;
+  left: 0;
+  background-size: cover;
+  height: 67px;
+}
+
+.art:nth-child(2n):before {
+  background-image: url("/img/item-logo-gris.svg");
+}
+
+.art:nth-child(3n):before {
+  background-image: url("/img/item-logo-blanco.svg");
+}
+
+.art:nth-child(4n):before {
+  background-image: url("/img/item-logo-rojo.svg");
+}
+
+.art + .art {
+  margin-top: 0;
+}
+
+.art__tit {
+  font-size: 1.875rem;
+  line-height: 2.125rem;
+  margin-bottom: .125rem;
+}
+
+.art__desc {
+  font-size: .825rem;
+  line-height: 1.125rem;
+  height: 3.5rem;
+  display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  /*
+  word-break: break-all;
+  white-space: nowrap; */
+}
+
+.art__img {
+  width: 100%;
+  max-height: 250px;
+  overflow: hidden;
+}
+
+.art__img img {
+  .transition(all .1s ease-in);
+}

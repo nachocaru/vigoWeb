@@ -1,0 +1,23 @@
+{{ partial "head.html" . }}
+
+    <div class="wrp">
+        <section class="main" role="main">
+
+            <div class="blk">
+
+                <h1 class="blk__tit">{{ .Title }}</h1>
+                <time>{{ .Date.Format "January 2 2006" }}</time>
+
+                <div class="blk__cnt">
+
+                    {{ .Content }}
+
+                </div>
+
+            </div>
+
+        </section>
+    </div>
+
+
+{{ partial "footer.html" . }}

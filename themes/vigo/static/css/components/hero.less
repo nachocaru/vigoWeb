@@ -1,0 +1,50 @@
+.main__hero {
+
+  background: url(/img/vigo_bg.jpg) center center @vigo-red;
+  background-size: cover;
+  height: 100vh;
+  display: table;
+  width: 100%;
+  color: @vigo-pink;
+  font-family: @vigo-font;
+  position: relative;
+  text-shadow: 0 1px 10px #000;
+
+}
+
+.main__hero:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0,0,0,.55);
+}
+
+.main__hero-wrp {
+  display: table-cell;
+  width: 100%;
+  text-align: center;
+  vertical-align: middle;
+  position: relative;
+  z-index: 1;
+}
+
+.main__hero-tit {
+  font-size: 3.5rem;
+  line-height: 3.5rem;
+  margin-bottom: .5rem;
+  font-weight: normal;
+  color: @vigo-white;
+}
+
+.main__hero-desc {
+  font-size: 1.75rem;
+  letter-spacing: 3px;
+  margin-bottom: 1.5rem;
+  display: block;
+}

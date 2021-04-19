@@ -1,0 +1,81 @@
+.art-list {
+
+}
+
+.art {
+  position: relative;
+  padding: 2.5rem 2rem 2.5rem 30%;
+  display: table;
+  vertical-align: middle;
+  text-align: left;
+  width: 100%;
+  background: @vigo-red;
+  color: @vigo-white;
+  overflow: hidden;
+}
+
+.art + .art {
+  margin-top: 2rem;
+}
+
+.art__tit {
+  font-family: @vigo-font;
+  font-size: 2.875rem;
+  font-weight: normal;
+  letter-spacing: 2px;
+  line-height: 3.5rem;
+  margin-bottom: .5rem;
+}
+
+.art__tit a {
+  color: @vigo-white;
+}
+
+.art__img {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 25%;
+  display: block;
+  overflow: hidden;
+}
+
+.art__img > img {
+  width: 100%;
+}
+
+.art__desc {
+  font-size: 1.1rem;
+  line-height: 1.25rem;
+  margin: 0;
+}
+
+.art:nth-child(2n) {
+  color: @vigo-red;
+  background: @vigo-gray;
+}
+
+.art:nth-child(2n) .art__tit,
+.art:nth-child(2n) .art__tit a {
+  color: @vigo-red;
+}
+
+.art:nth-child(3n) {
+  color: @vigo-red;
+  background: #f9f5f4;
+}
+
+.art:nth-child(3n) .art__tit,
+.art:nth-child(3n) .art__tit a {
+  color: @vigo-red;
+}
+
+.art:nth-child(4n) {
+  color: @vigo-white;
+  background-color: @vigo-red;
+}
+
+.art:nth-child(4n) .art__tit,
+.art:nth-child(4n) .art__tit a {
+  color: @vigo-white;
+}

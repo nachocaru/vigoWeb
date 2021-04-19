@@ -1,0 +1,23 @@
+.ftr-nav {
+  margin: 0 0 1.5rem;
+}
+
+
+.ftr-nav__it {
+  display: inline-block;
+}
+
+.ftr-nav__it + .ftr-nav__it {
+  border-top: none;
+  margin-top: 0;
+  padding-top: 0;
+  margin-left: .75rem;
+  padding-left: .975rem;
+}
+
+.ftr-nav__it + .ftr-nav__it:before {
+  content: "|";
+  position: absolute;
+  left: 0;
+  color: @vigo-white;
+}

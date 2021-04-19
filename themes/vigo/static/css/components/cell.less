@@ -1,0 +1,55 @@
+.cell {
+  background-color: @vigo-white;
+}
+
+.cell--dark {
+  background-color: @vigo-gray;
+}
+
+.cell__desc {
+  font-size: 1.125rem;
+  line-height: 2.5rem;
+  font-style: italic;
+  padding: 2.5rem 0;
+  margin: 0 0 2rem 0;
+  position: relative;
+  display: block;
+}
+
+.cell__desc:after {
+  content: "";
+  display: block;
+  width: 50%;
+  height: 1px;
+  background: #444;
+  background: -moz-linear-gradient(left, transparent 0%, #444 50%, transparent 100%);
+  background: -ms-linear-gradient(left, transparent 0%,#444 50%, transparent 100%);
+  background: -o-linear-gradient(left, transparent 0%,#444 50%, transparent 100%);
+  background: -webkit-gradient(linear, left top, right top, color-stop(0%,transparent), color-stop(50%,#444), color-stop(100%,transparent));
+  background: webkit-linear-gradient(left, transparent 0%,#444 50%,transparent 100%);
+  background: linear-gradient(left, transparent 0%,#444 50%,transparent 100%);
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+}
+
+//pages
+////acerca
+.cell--acerca {
+  position: relative;
+  overflow: hidden;
+}
+
+.acerca__img {
+  position: absolute;
+  right: 0;
+  bottom: -30%;
+  width: 25%;
+}
+
+.cell--acerca .blk__cnt {
+  position: relative;
+  z-index: 1;
+}

@@ -1,0 +1,120 @@
+{{ partial "head.html" . }}
+
+    <section role="main" class="main main--home">
+        <div class="main__hero">
+            <div class="main__hero-wrp">
+                <div class="wrp">
+                    <h1 class="main__hero-tit">Equipamiento de oficina</h1>
+                    <div class="main__hero-cnt">
+                        <p class="main__hero-desc">Diseño de vanguardia</p>
+                        <a class="btn btn__hero" href="#productos">Descubre Vigo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cell" id="productos">
+            <div class="wrp">
+                <div class="blk">
+                    <h1 class="blk__tit">Nuestros Productos</h1>
+                    <div class="blk__cnt">
+                        <div class="art-list">
+                            {{ $.Scratch.Set "counter" 0 }}
+                            {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                                {{ $.Scratch.Set "counter" (add ($.Scratch.Get "counter") 1) }}
+                                <article class="art">
+                                    <h1 class="art__tit">
+                                        <a href="/catalogo/#{{ $name }}" data-filter="{{ $name }}">0{{$.Scratch.Get "counter"}} | {{ $name }}</a>
+                                    </h1>
+                                    <a href="/catalogo/#{{ $name }}" class="art__img">
+                                        <img src="/img/{{ $name }}.jpg" >
+                                    </a>
+                                </article>
+                            {{ end }}
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="cell cell--dark cell--acerca" id="quienes">
+            <div class="wrp">
+                <div class="blk">
+                    <h1 class="blk__tit">Quienes somos</h1>
+                    <div class="blk__cnt">
+                        <p class="cell__desc"> Gracias a la incorporación de software especialmente diseñado para cotizar aberturas y a nuestra vocación de
+                                servicio logramos responder rápidamente a las solicitudes de precio de nuestros clientes presupuestando de manera clara y a valores competitivos.
+                                Con esta combinación de tecnología y personal capacitado respaldamos y renovamos nuestro compromiso de brindar una atención de calidad de forma eficaz y eficiente cumpliendo en tiempo y forma con nuestros clientes en todos los proyectos que nos sean recomendados.
+                                Lo invitamos entonces a que se acerque a nosotros solicitando presupuesto a través de la presentación de planillas de obra para que tenga la posibilidad de comprobar que mantenemos la misma calidad de servicio en la atención que nos caracteriza.
+                            </p>
+                    </div>
+                    <img src="/img/about-bg.png" alt="Acerca de nosotros" class="acerca__img">
+                </div>
+            </div>
+        </div>
+
+        <div class="cell" id="contacto">
+            <div class="wrp">
+                <div class="blk">
+                    <h1 class="blk__tit">Contacto</h1>
+                    <div class="blk__cnt blk__cnt--cols">
+                        <div class="main_col">
+                            <form class="form" action="" target="_blank">
+                                <fieldset>
+                                    <div class="form__row">
+                                        <label class="form__lbl">
+                                            <b class="form__lbl-name">Nombre:</b>
+                                            <input type="text" placeholder="ej: Juan Pérez"/>
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="form__lbl">
+                                            <b class="form__lbl-name">Email:</b>
+                                            <input type="text" placeholder="ej: juan@email.com"/>
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="form__lbl">
+                                            <b class="form__lbl-name">Asunto:</b>
+                                            <input type="text" name="asunto" placeholder="ej: Cotización"/>
+                                        </label>
+                                    </div>
+                                    <div class="form__row">
+                                        <label class="form__lbl">
+                                            <b class="form__lbl-name">Comentarios:</b>
+                                            <textarea name="mensaje" placeholder="Escriba su mensaje aquí"></textarea>
+                                        </label>
+                                    </div>
+                                    <div class="form__actions">
+                                        <button type="submit" class="btn btn--form-send">Enviar</button>
+                                    </div>
+                                </fieldset>
+                            </form>
+                        </div>
+                        <div class="sec_col">
+                             <div class="contact-blk">
+                                 <p class="contact-blk__desc">
+                                     Por contacto acerca de cotizaciones puede también utilizar nuestro e-mail de contacto:
+                                     <a href="mailto:info@worldvigo.com" target="_blank" title="Contactar a Vigo vía mail">info@worldvigo.com</a>
+                                 </p>
+                                 <ul class="contact-blk__list">
+                                     <li class="contact-blk__list-it">
+                                         <a href="https://www.facebook.com/worldvigo" target="_blank"><i class="fa fa-facebook"></i></a>
+                                     </li>
+                                     <li class="contact-blk__list-it">
+                                         <a href="skype:fphard?chat" ><i class="fa fa-skype"></i></a>
+                                     </li>
+                                     <li class="contact-blk__list-it">
+                                         <a href="mailto:info@worldvigo.com?Subject=Mensaje enviado desde {{ .URL }}" ><i class="fa fa-envelope-o"></i></a>
+                                     </li>
+                                 </ul>
+                             </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+{{ partial "footer.html" . }}

@@ -1,0 +1,39 @@
+{{ partial "head.html" . }}
+
+<div class="wrp">
+    <section class="main" role="main">
+
+        <div class="blk" id="filters">
+            <h1 class="blk__tit">Nuestros Productos</h1>
+            <div class="filter">
+                <p class="filter__name">Ordenar por:</p>
+                <ul class="filter__list">
+                    {{ range $name, $taxonomy := .Site.Taxonomies.categories }}
+                    <li><a href="#" class="btn btn--filter" data-filter="{{ $name }}">{{ $name }}</a></li>
+                    {{ end }}
+                    <li><a href="#" class="btn btn--filter" data-filter="all">Ver todo</a></li>
+                </ul>
+            </div>
+            <div class="blk__cnt">
+                <div class="art-list">
+
+                    {{ range .Paginator.Pages }}
+                    <article class="art" data-type="{{ delimit .Params.categories " " }}">
+                        <h1 class="art__tit">
+                            <a href="{{ .RelPermalink }}">{{ .Title }}</a>
+                        </h1>
+                        <p class="art__desc">{{ .Description }}</p>
+                        <a href="{{ .RelPermalink }}" class="art__img">
+                            <img src="/img/{{ .Params.img }}" alt="{{ .Params.img }}">
+                        </a>
+                    </article>
+                    {{ end}}
+
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+
+{{ partial "footer.html" . }}
