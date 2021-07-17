@@ -1,0 +1,26 @@
+---
+Layout: "sillas"
+Categories:
+ - "homeoffice"
+Title: Mesa lateral linea VigoHome 
+Description: Mesa lateral estilo retro
+Caracteristicas: 
+- Confeccionado tubos de hierro acabado en pintura de epoxi
+- Base en color negro 
+- Estilo retro
+- Dimensiones 50 de diametro x 58,5cm de altura
+- Origen Brasil 
+- Garantia 6 meses
+
+Date: 2021-01-31T19:13:03-02:00
+pdf: pdf-archivos/24600.pdf
+img: img-catalogo/24600/1.jpg
+gallery: 
+- img-catalogo/24600/1.jpg
+- img-catalogo/24600/2.jpg
+- img-catalogo/24600/3.jpg
+
+colors:
+    - Negro
+
+---
