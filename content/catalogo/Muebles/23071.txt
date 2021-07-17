@@ -2,6 +2,7 @@
 Layout: "sillas"
 Categories:
  - "homeoffice"
+ - "Muebles"
 Title: Mesa redonda linea VigoHome 
 Description: Mesa redonda estilo nordico 
 Caracteristicas: 
