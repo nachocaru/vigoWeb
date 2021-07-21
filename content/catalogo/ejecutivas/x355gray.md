@@ -1,8 +1,6 @@
 ---
 Layout: sillas
 Categories:
-- homeoffice
-- operativas
 - ejecutivas
 - gerenciales
 Title: x3-55 Gray
