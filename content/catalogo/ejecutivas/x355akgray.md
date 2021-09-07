@@ -5,7 +5,7 @@ Categories:
  - "operativas"
  - "ejecutivas"
  - "gerenciales"
-Title: x3-55 Gray
+Title: x3-55 Grey
 Description: Silla Operativa resistente.
 Caracteristicas: 
 - Silla Operativa
