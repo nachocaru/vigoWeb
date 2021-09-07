@@ -1,17 +1,16 @@
 ---
 Layout: sillas
 Categories:
-- ejecutivas
-- gerenciales
-Title: x3-55 Gray
-Description: Silla Operativa resistente
+- operativas
+- homeoffice
+Title: x3-55 Grey
+Description: Novedosa silla operativa de estructura color gris muy moderna
 Caracteristicas:
-- Silla Operativa
 - Respaldo en Mesh, con marco de nylon “GRIS”
 - Base metálica acabado pintura al horno “GRIS”
 - Cilindro de gas clase 4 (SHS certificado) “GRIS”
 - Asiento en espuma de molde con retardo al fuego certificado
-- Apoya brazos fijos o ajustables en color “GRIS”
+- Apoya brazos fijos o ajustables (2d) en color “GRIS”
 - Mecanismo sincronizado con 4 puntos de bloqueo
 - Ruedas de nylon anti-abrasión
 - Cojín lumbar ajustable en altura
@@ -24,13 +23,9 @@ gallery:
 - img-catalogo/x355gray/1.jpg
 - img-catalogo/x355gray/2.jpg
 - img-catalogo/x355gray/3.jpg
-- img-catalogo/x355gray/3.jpg
 - img-catalogo/x355gray/5.jpg
 - img-catalogo/x355gray/6.jpg
 - img-catalogo/x355gray/7.jpg
-- img-catalogo/x355gray/8.jpg
-- img-catalogo/x355gray/9.jpg
-- img-catalogo/x355gray/10.jpg
 colors:
 - Gris y rojo
 - Rojo
