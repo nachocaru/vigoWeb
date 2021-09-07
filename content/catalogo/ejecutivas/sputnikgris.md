@@ -25,7 +25,7 @@ Caracteristicas:
 
 
 Date: 2021-01-31T19:13:03-02:00
-pdf: pdf-archivos/sputnikgris.pdf
+pdf: pdf-archivos/x3-55akgrey.pdf
 img: img-catalogo/sputnikgris/1.jpg
 gallery: 
 - img-catalogo/sputnikgris/1.jpg
