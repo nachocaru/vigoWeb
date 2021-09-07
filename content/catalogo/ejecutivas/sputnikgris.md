@@ -20,7 +20,7 @@ Caracteristicas:
 - Apoyo lumbar en forma de cojín
 - Soporta hasta 150 kilos
 - Garantía 3 años
-- Incluye Apoya cabezas ajustable
+- Incluye Apoya cervical ajustable  
 
 
 
@@ -37,5 +37,5 @@ gallery:
 - img-catalogo/sputnikgris/7.jpg
 
 colors:
-    - Verde
+    - Dark Grey, Smoky Blue
 ---
