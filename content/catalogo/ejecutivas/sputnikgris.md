@@ -5,7 +5,7 @@ Categories:
  - "homeoffice"
  - "gerenciales"
  - "operativas"
-Title: Sputnik white
+Title: X3-55AK Grey Edition
 Description: Novedosa estructura en color GRIS, muy moderna.
 Caracteristicas: 
 - Silla Operativa
