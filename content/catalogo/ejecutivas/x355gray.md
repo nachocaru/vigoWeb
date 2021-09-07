@@ -30,6 +30,6 @@ colors:
 - Gris y rojo
 - Rojo
 - Gris oscuro
-- Gris azulado
+- Smoky blue
 
 ---
