@@ -4,7 +4,6 @@ Categories:
  - "ejecutivas"
  - "homeoffice"
  - "gerenciales"
- - "operativas"
 Title: X3-55AK Grey Edition
 Description: Novedosa estructura en color GRIS, muy moderna.
 Caracteristicas: 
