@@ -8,7 +8,6 @@ Categories:
 Title: x3-55 Grey
 Description: Silla Operativa resistente.
 Caracteristicas: 
-- Silla Operativa
 - Respaldo en Mesh, con marco de nylon “GRIS”
 - Base metálica acabado pintura al horno “GRIS”
 - Cilindro de gas clase 4 (SHS certificado) “GRIS”
@@ -19,7 +18,7 @@ Caracteristicas:
 - Cojín lumbar ajustable en altura
 - Soporta hasta 150 kilos
 - Garantía 3 años
-- Apoya cabeza ajustable
+- Apoyo cervical ajustable
 
 
 Date: 2021-01-31T19:13:03-02:00
